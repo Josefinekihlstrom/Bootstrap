@@ -2,8 +2,29 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.alert-container {
+.container-wrapper {
 
+}
+
+.container-wrapper--red {
+    background-color: #3e7032;
+    color: white;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    border: 1px solid transparent;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #decc54;
+    border-color: #decc54;
+    color: #7b6c06;
+    
 }
 
 .callout-container {
@@ -39,20 +60,40 @@ body {
 
 }
 
-/*BLOCK DIVIDER*/
+/*CONTENT CONTAINERS*/
 
-.block-divider {
-    width: 75px;
-    height: 5px;
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/*NAVBAR*/
+
+.navalert-container {
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.50);
+}
+
+.navbar .navbar-toggler {
     border: 0;
 }
 
-.block-divider--orange {
-    background-color: #3e7032;
+.navbar .navbar-brand {
+    font-weight: bold;
 }
 
-.block-divider--short {
-    width: 35px;
+.navbar .navbar-nav a {
+    font-weight: bold;
 }
 
 /*JUMBOTRON*/
@@ -61,7 +102,7 @@ body {
     background-color: transparent;
 }
 
-.jumbotron-header {
+.jumbotron h1 {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
@@ -76,6 +117,43 @@ body {
     font-size: 90%;
     font-style: italic;
     color: white;
+}
+
+/*PAGE HEADERS*/
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+/*BLOCK DIVIDER*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444
+}
+
+.block-divider--orange {
+    background-color: #3e7032;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
 }
 
 /* BUTTONS*/
@@ -98,4 +176,25 @@ body {
 .btn--red:active:focus {
     background-color: #243e1d;
     border-color: #243e1d;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3e7032;
 }
